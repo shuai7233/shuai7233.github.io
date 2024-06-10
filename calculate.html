@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsq</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* justify-items: center; */
+            align-items: center;
+            /* align-content: center; */
+            width: 720px;
+            height: 1200px;
+            background-color: black;
+        }
+        #prt{
+            width: 700px;
+            height: 300px;
+            margin: 10px;
+            border: 3px solid aqua;
+            background-color: gray;
+        }
+        .symbol{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 160px;
+            height: 160px;
+            margin: 5px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+        .number{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 160px;
+            height: 160px;
+            margin: 5px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="prt"></div>
+        <div class="symbol" style="background-color: gainsboro;">AC</div>
+        <div class="symbol" style="background-color: gainsboro;">+/-</div>
+        <div class="symbol" style="background-color: gainsboro;">%</div>
+        <div class="symbol" id="c4" onclick="fuhao('c4')">%</div>
+        <div class="number" id="n7" onclick="shuzi('n7')">7</div>
+        <div class="number" id="n8" onclick="shuzi('n8')">8</div>
+        <div class="number" id="n9" onclick="shuzi('n9')">9</div>
+        <div class="symbol" id="c3" onclick="fuhao('c3')">x</div>
+        <div class="number" id="n4" onclick="shuzi('n4')">4</div>
+        <div class="number" id="n5" onclick="shuzi('n5')">5</div>
+        <div class="number" id="n6" onclick="shuzi('n6')">6</div>
+        <div class="symbol" id="c2" onclick="fuhao('c2')">-</div>
+        <div class="number" id="n1" onclick="shuzi('n1')">1</div>
+        <div class="number" id="n2" onclick="shuzi('n2')">2</div>
+        <div class="number" id="n3" onclick="shuzi('n3')">3</div>
+        <div class="symbol" id="c1" onclick="fuhao('c1')">+</div>
+        <div class="number" style="width: 330px;" id="n0" onclick="shuzi('n0')">0</div>
+        <div class="number">.</div>
+        <div class="symbol" onclick="output()">=</div>
+    </div>
+    <script src="./calculate.js"></script>
+</body>
+</html>
